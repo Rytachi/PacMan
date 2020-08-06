@@ -57,11 +57,11 @@ public class Game extends Canvas implements Runnable, KeyListener{
 		
 		addKeyListener(this);
 		player = new Player(Game.WIDTH/2, HEIGHT/2);
-		level = new Level("map1.png");
-		spritesheet = new SpriteSheet("spritesheet.png");
+		level = new Level("resources/map1.png");
+		spritesheet = new SpriteSheet("resources/spritesheet.png");
 		score = new Score();
 		menu = new Menu();
-		new Texture("backGround1.png", "backGround1White.png");
+		new Texture("resources/backGround1.png", "resources/backGround1White.png");
 	}
 	
 	public void start() {
@@ -203,8 +203,8 @@ public class Game extends Canvas implements Runnable, KeyListener{
 				spaceState = false;
 				waitTime = 0;
 				score.resetScore();
-				level = new Level("map1.png");
-				new Texture("backGround1.png", "backGround1White.png");
+				level = new Level("resources/map1.png");
+				new Texture("resources/backGround1.png", "resources/backGround1White.png");
 			}
 		}
 		
@@ -213,8 +213,8 @@ public class Game extends Canvas implements Runnable, KeyListener{
 			
 			waitTime++;
 			if(waitTime > 200) {
-				new Texture("backGround2.png", "backGround2White.png");
-				level = new Level("map2.png");
+				new Texture("resources/backGround2.png", "resources/backGround2White.png");
+				level = new Level("resources/map2.png");
 				level.increaseDifficulty();
 				fruitTimeTarget -= 50;
 				state = STATE.NEWGAME;
@@ -225,8 +225,8 @@ public class Game extends Canvas implements Runnable, KeyListener{
 			
 			waitTime++;
 			if(waitTime > 200) {
-				new Texture("backGround3.png", "backGround3White.png");
-				level = new Level("map3.png");
+				new Texture("resources/backGround3.png", "resources/backGround3White.png");
+				level = new Level("resources/map3.png");
 				level.increaseDifficulty();
 				if(fruitTimeTarget < 0)
 					fruitTimeTarget = 100;

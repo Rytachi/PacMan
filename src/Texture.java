@@ -37,11 +37,11 @@ public class Texture {
 		
 		try {
 			
-			title = ImageIO.read(getClass().getResource("title.png"));
-			ready = ImageIO.read(getClass().getResource("ready.png"));
-			game_over = ImageIO.read(getClass().getResource("gameover.png"));
-			food = ImageIO.read(getClass().getResource("food.png"));
-			powerFruit = ImageIO.read(getClass().getResource("powerBall.png"));
+			title = ImageIO.read(getClass().getResource("resources/title.png"));
+			ready = ImageIO.read(getClass().getResource("resources/ready.png"));
+			game_over = ImageIO.read(getClass().getResource("resources/gameover.png"));
+			food = ImageIO.read(getClass().getResource("resources/food.png"));
+			powerFruit = ImageIO.read(getClass().getResource("resources/powerBall.png"));
 			
 			backGround = ImageIO.read(getClass().getResource(path1));
 			backGroundWhite = ImageIO.read(getClass().getResource(path2));
